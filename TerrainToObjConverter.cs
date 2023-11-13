@@ -84,9 +84,10 @@ public class TerrainToObjConverter : EditorWindow
             for (int x = 0; x < terrainWidth - 1; x++)
             {
                 int index = z * terrainWidth + x;
-
-                sw.WriteLine("f " + (index + 1) + "/" + (index + 1) + " " + (index + 2) + "/" + (index + 2) + " " + (index + terrainWidth + 2) + "/" + (index + terrainWidth + 2));
-                sw.WriteLine("f " + (index + 2) + "/" + (index + 2) + " " + (index + terrainWidth + 3) + "/" + (index + terrainWidth + 3) + " " + (index + terrainWidth + 2) + "/" + (index + terrainWidth + 2));
+                sw.WriteLine("f " + (index + 1) + "/" + (index + 1) + " " + (index + terrainWidth + 2) + "/" + (index + terrainWidth + 2) + " " + (index + terrainWidth + 1) + "/" + (index + terrainWidth + 1));
+                sw.WriteLine("f " + (index + terrainWidth + 2) + "/" + (index + terrainWidth + 2) + " " + (index + 1) + "/" + (index + 1) + " " + (index + 2) + "/" + (index + 2));
+                // sw.WriteLine("f " + (index + 2) + "/" + (index + 2) + " " + (index + terrainWidth + 1) + "/" + (index + terrainWidth + 1) + " " + (index + terrainWidth + 3) + "/" + (index + terrainWidth + 3));
+                // sw.WriteLine("f " + (index + terrainWidth + 3) + "/" + (index + terrainWidth + 3) + " " + (index + 2) + "/" + (index + 2) + " " + (index + terrainWidth + 2) + "/" + (index + terrainWidth + 2));            
             }
         }
 
