@@ -1,5 +1,5 @@
 // Shader targeted for low end devices. Single Pass Forward Rendering.
-Shader "Babu/BabuSimpleLit"
+Shader "Terrain/TerrainSimpleLit"
 {
     // Keep properties of StandardSpecular shader for upgrade reasons.
     Properties
