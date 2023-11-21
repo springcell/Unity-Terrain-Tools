@@ -390,6 +390,8 @@ Shader "Terrain/TerrainSimpleLit"
             #pragma fragment LitPassFragmentSimple
             #define BUMP_SCALE_NOT_SUPPORTED 1
 
+            #pragma multi_compile _ _SPLATMAP_ON
+
             #include "./SimpleLitInputLJ.hlsl"
             #include "./SimpleLitForwardPassLJ.hlsl"
             ENDHLSL
